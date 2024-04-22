@@ -1,6 +1,7 @@
 # Data sources, IDs of Google Sheets where the core date is stored.
 # Specific for WashText
-localised_sheets = "1TJ1YVSu87ubc5GvGea2hfRh4v234OyJUccQnZ90VUP4"
+washtext_sheets = "1TJ1YVSu87ubc5GvGea2hfRh4v234OyJUccQnZ90VUP4"
+localised_sheets = "10a9KQXIkX1IkA0PX_b7dwl_OSFrWXrtdGOSrIC1H5F4"
 
 # Shared with all deployments.
 # Multiple content index for different types of content.
@@ -49,6 +50,7 @@ sources = [
             T_delivery,
             menu_data,
             T_menu,
+            washtext_sheets,
             localised_sheets
         ],
         # "archive": "parenttext_all.zip",
@@ -116,12 +118,12 @@ length_threshold = "18"
 # Same for all deployments.
 ab_testing_sheet_ID = "1i_oqiJYkeoMsYdeFOcKlvvjnNCEdQnZlsm17fgNvK0s"
 # Mexico specific.
-localisation_sheet_ID = "1v4q5RdnIKU-9jHINjHIrNOPebDih_gBU9G1nbGZlEn8"
+localisation_sheet_ID = ""
 
 # Google Sheet ID containing dict edits data.
 # Same for all deployments.
 eng_edits_sheet_ID = "1Ab8H_s26EuOiS4nZ6HGADjD4CZw55586LL66fl8tEWI"
-# Mexico specific.
+
 transl_edits_sheet_ID = "195uFD9prl3qx5ziTIKeR9j_PDor01usfp4lrHMuu2s0"
 
 # Data used in safeguarding script.
