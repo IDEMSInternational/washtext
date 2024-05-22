@@ -57,11 +57,12 @@ sources = [
         #"archive": "https://drive.usercontent.google.com/download?id=1V9fQZ9ZrzwRkQWBtlHJ1it0Fe3hdtHs2&export=download&authuser=0&confirm=t&uuid=f9d65ff1-b210-4b61-a030-cd4a231c22ca&at=APZUnTVzz2FLSi1riCmRjCFI5vCx:1696348063599",  # noqa: E501
         "crowdin_name": "modules",
         #"tags": [1,"module",4,"course"],
-        "tags": [],
-        #"tags": [1,"dev_assess",1,"module",1,"ltp_activity",1,"goal_checkin",4,"course"],
+        "tags": [1,"module"],
+        #"tags": [1,"onboarding",1, "safeguarding" ,1,"menu" ,1,"delivery"],
         "split_no": 1
     },
 ]
+
 
 # Data used when modifying expiration times.
 special_expiration = "./edits/specific_expiration.json"
@@ -73,7 +74,6 @@ model = "models.parenttext_models"
 # Languages that will be looked for to localize back into the flows, "language" is the
 # 3-letter code used in RapidPro, "code" is the 2 letter code used in CrowdIn.
 languages = [
-    {"language": "afr", "code": "af"},
     {"language": "zul", "code": "zu"}
 ]
 
