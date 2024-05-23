@@ -57,7 +57,7 @@ sources = [
         #"archive": "https://drive.usercontent.google.com/download?id=1V9fQZ9ZrzwRkQWBtlHJ1it0Fe3hdtHs2&export=download&authuser=0&confirm=t&uuid=f9d65ff1-b210-4b61-a030-cd4a231c22ca&at=APZUnTVzz2FLSi1riCmRjCFI5vCx:1696348063599",  # noqa: E501
         "crowdin_name": "modules",
         #"tags": [1,"module",4,"course"],
-        "tags": [1,"module"],
+        "tags": [],
         #"tags": [1,"onboarding",1, "safeguarding" ,1,"menu" ,1,"delivery"],
         "split_no": 1
     },
@@ -112,7 +112,7 @@ special_words = "./edits/special_words.json"
 # In places where the QR are too long. We will make the changes to make the QRs
 # numbers and add the number references to the message text as example 1.
 count_threshold = "3"
-length_threshold = "18"
+length_threshold = "20"
 
 # Google Sheet ID containing AB testing data.
 # Same for all deployments.
@@ -127,11 +127,11 @@ eng_edits_sheet_ID = "1Ab8H_s26EuOiS4nZ6HGADjD4CZw55586LL66fl8tEWI"
 transl_edits_sheet_ID = "195uFD9prl3qx5ziTIKeR9j_PDor01usfp4lrHMuu2s0"
 
 # Data used in safeguarding script.
-SG_flow_ID = "b83315a6-b25c-413a-9aa0-953bf60f223c"
-SG_flow_name = "safeguarding_wfr_interaction"
+#SG_flow_ID = "b83315a6-b25c-413a-9aa0-953bf60f223c"
+#SG_flow_name = "safeguarding_wfr_interaction"
 
 # Path to file containing translated safeguarding words.
-SG_path = "./edits/safeguarding_words.json"
+SG_path = "./output/safeguarding_words.json"
 
 # Names of redirect flows to be modified as part of safeguarding process.
 redirect_flow_names = (
@@ -158,9 +158,15 @@ def create_config():
         "redirect_flow_names": redirect_flow_names,
         "select_phrases": select_phrases,
         "replace_phrases": "",
-        "sg_flow_id": SG_flow_ID,
-        "sg_flow_name": SG_flow_name,
+        #"sg_flow_id": SG_flow_ID,
+        #"sg_flow_name": SG_flow_name,
         "sg_path": SG_path,
+        "sg_sources": [
+            {
+               "key": "zul",
+               "path": "excel_files/safeguarding zulu.xlsx",
+            }
+        ],
         "sources": sources,
         "special_expiration": special_expiration,
         "special_words": special_words,
