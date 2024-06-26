@@ -89,7 +89,7 @@ folder_within_repo = "translations/wash_text"
 # 2 - We may want to reformat the quick replies so that long ones are added to the
 #     message text as above - for this use reference code "reformat"
 # 3 - We may not want to do anything, for this use reference code "none"
-qr_treatment = "reformat"
+qr_treatment = "reformat_whatsapp"
 
 # This is the default phrase we want to add in if the quick replies are being moved to
 # message text.
@@ -112,7 +112,7 @@ special_words = "./edits/special_words.json"
 # In places where the QR are too long. We will make the changes to make the QRs
 # numbers and add the number references to the message text as example 1.
 count_threshold = "3"
-length_threshold = "20"
+length_threshold = "24"
 
 # Google Sheet ID containing AB testing data.
 # Same for all deployments.
